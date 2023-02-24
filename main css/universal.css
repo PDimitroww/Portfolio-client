@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 3.2rem;
+  color: #3c008b;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 70%;
+  height: 0.3rem;
+  background: #9a5fe2;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+main {
+  margin-left: 30rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  color: #0f0024;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #0f0024;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+em {
+  font-style: normal;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.container {
+  margin: 0 12rem;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* BACK TO TOP BTN */
+.back-to-top {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 996;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.uil-arrow-circle-up {
+  position: fixed;
+  font-size: 6rem;
+  bottom: 2rem;
+  right: 2rem;
+  color: #3c008b;
+}

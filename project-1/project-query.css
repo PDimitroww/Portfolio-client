@@ -1,0 +1,176 @@
+/* Bellow 1344px (smaller laptops) 1344/16=84em !!!!!!! */
+@media (max-width: 84em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Below 1200px (Landscape Tablets)*/
+
+@media (max-width: 75em) {
+  .container {
+    column-gap: 4rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Below 944px (Tablets)*/
+
+@media (max-width: 59em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    row-gap: 2rem;
+  }
+
+  .list {
+    width: 100%;
+  }
+}
+
+/*  Below 704px (Smaller Tablets) */
+
+@media (max-width: 44em) {
+  .img-1 {
+    width: 70rem;
+  }
+}
+
+/* Below 544px (Phones) */
+
+@media (max-width: 34em) {
+  html {
+    font-size: 60%;
+  }
+
+  .img-1 {
+    width: 50rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .heading {
+    padding: 3rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .nav-list a:link,
+  .nav-list a:visited {
+    text-decoration: none;
+    color: #3a077e;
+    font-size: 3.8rem;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-left: 1px solid #3a077e;
+    border-bottom: 1px solid #3a077e;
+    border-bottom-left-radius: 4rem;
+    width: 25rem;
+    height: 70rem;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9997;
+    /* Hiding it visually */
+    opacity: 0;
+    /* Making it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hiding it from screen readers */
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-open .nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .uil-times {
+    display: block;
+    font-size: 4.6rem;
+  }
+
+  .nav-open .uil-bars {
+    display: none;
+  }
+}
+
+/* Smaller phones */
+
+@media (max-width: 27em) {
+  html {
+    font-size: 45%;
+  }
+
+  .nav {
+    padding: 2rem 2rem;
+  }
+
+  .project {
+    padding: 6rem 0;
+  }
+
+  .dot-align {
+    margin-top: 0;
+  }
+
+  p,
+  h2 {
+    margin: 0 2rem !important;
+  }
+
+  .img-1 {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .img-1 {
+    width: 45rem;
+  }
+}
+
+/* Fixing footer overlapping on some landscape devices */
+/* 
+@media screen and (max-width: 59em) and (orientation: landscape) {
+  .footer {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (max-width: 84em) and (orientation: landscape) {
+  .footer {
+    margin-top: 50rem;
+  }
+
+  .contact {
+    height: 60vh;
+  }
+} */

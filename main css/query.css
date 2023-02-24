@@ -1,0 +1,323 @@
+/* Bellow 1344px (smaller laptops) 1344/16=84em !!!!!!! */
+@media (max-width: 84em) {
+  .header {
+    overflow: scroll;
+  }
+
+  .home {
+    background-size: 135rem;
+  }
+
+  .header-footer {
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .heading {
+    margin-top: 33vh;
+  }
+
+  .presentation {
+    font-size: 3.4rem;
+  }
+
+  .typewrite {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    margin: 0 3rem;
+  }
+
+  .about-img {
+    max-width: 30rem;
+  }
+
+  .about-list {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  .resume .resume-item h5,
+  .resume .resume-item-2 h5 {
+    font-size: 1.4rem;
+  }
+
+  .resume .resume-item ul li,
+  .resume .resume-item-2 ul li {
+    font-size: 1.6rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem;
+  }
+
+  .services-rows {
+    column-gap: 0.5rem;
+  }
+
+  .service-icon {
+    margin-left: 1rem;
+  }
+
+  .location,
+  .email,
+  .call {
+    width: 30rem;
+  }
+}
+
+/* Below 1200px (Landscape Tablets)*/
+
+@media (max-width: 75em) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .home {
+    background-size: 120rem;
+  }
+
+  .rows {
+    justify-content: center;
+  }
+
+  .column-1 {
+    width: 48%;
+  }
+
+  .column-2 {
+    width: 48%;
+  }
+
+  .contact-contaier {
+    height: 40rem;
+    margin: 10rem 5rem;
+  }
+
+  .contact-info {
+    padding: 4rem;
+  }
+
+  .service-icon {
+    margin-left: 0;
+  }
+
+  .service-box {
+    padding: 0;
+  }
+}
+
+/* Below 944px (Tablets)*/
+
+@media (max-width: 59em) {
+  main,
+  .footer {
+    margin-left: 0;
+  }
+
+  .home {
+    background-size: 94rem;
+    height: 85vh;
+  }
+
+  .heading {
+    margin-top: 30vh;
+    margin-left: 15vh;
+  }
+
+  .nav-box {
+    /* Hiding it visually */
+    opacity: 0;
+    /* Making it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hiding it from screen readers */
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-open .nav-box {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .uil-times {
+    display: block;
+    font-size: 4.6rem;
+  }
+
+  .nav-open .uil-bars {
+    display: none;
+  }
+}
+
+/*  Below 704px (Smaller Tablets) */
+
+@media (max-width: 44em) {
+  .home {
+    background-size: 71rem;
+    height: 65vh;
+  }
+
+  .heading {
+    margin-top: 25vh;
+    margin-left: 5vh;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    margin-bottom: 4rem;
+    margin-right: 0;
+    max-width: 50rem;
+  }
+
+  .rows {
+    flex-direction: column;
+  }
+
+  .column-1,
+  .column-2 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .column-mobile {
+    margin-top: 2.4rem;
+  }
+
+  .projects {
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .services-rows {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin: 1rem;
+  }
+
+  .contact-contaier {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .photo {
+    height: 40rem;
+  }
+
+  .contact {
+    margin-bottom: 25rem;
+  }
+}
+
+/* Below 544px (Phones) */
+
+@media (max-width: 34em) {
+  html {
+    font-size: 60%;
+  }
+
+  .heading {
+    margin-top: 20vh;
+    margin-left: 10vh;
+  }
+
+  .home {
+    background-size: 70rem;
+    height: 30vh;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 0;
+    margin: 4rem;
+  }
+
+  .services-rows {
+    column-gap: 1rem;
+  }
+}
+
+/* Smaller phones */
+
+@media (max-width: 27em) {
+  .heading {
+    margin-top: 10vh;
+    margin-left: 5vh;
+  }
+
+  .presentation {
+    font-size: 2.4rem;
+  }
+
+  .typewrite {
+    font-size: 1.8rem;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .projects {
+    gap: 3rem;
+    margin: 3rem;
+  }
+
+  .uil-service {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Fixing footer overlapping on some landscape devices */
+
+@media screen and (max-width: 59em) and (orientation: landscape) {
+  .footer {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (max-width: 84em) and (orientation: landscape) {
+  .footer {
+    margin-top: 50rem;
+  }
+
+  .contact {
+    height: 60vh;
+  }
+}

@@ -1,0 +1,227 @@
+/************* NAV BAR *************/
+.nav {
+  width: 100%;
+  height: 7rem;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff7ff;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8629f8;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+  text-decoration: none;
+  color: #8629f8;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  color: #dd95ff;
+}
+
+/* Buttons for mobile nav */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  color: #3a077e;
+  display: none;
+  position: fixed;
+  right: 2rem;
+}
+
+.uil-bars,
+.uil-times {
+  font-size: 3.2rem;
+}
+
+.uil-times {
+  display: none;
+}
+
+/* Fixed navbar */
+
+.nav.fixed {
+  position: fixed;
+  box-shadow: 0 0 1rem 0px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  background-color: #fff7ffd7;
+}
+
+.wrapper {
+  height: 7rem;
+}
+
+/************* SECTION INFO *************/
+.heading {
+  background-color: #fff7ff;
+  padding: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  color: #3a077e;
+  border-bottom: 0.1rem solid #ecddff;
+  border-top: 0.1rem solid #ecddff;
+}
+
+.project {
+  display: grid;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  padding: 6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  grid-template-rows: 2;
+  column-gap: 8rem;
+}
+
+.img-1 {
+  width: 80rem;
+}
+
+.container-info {
+  width: 50rem;
+  grid-column: 2;
+}
+
+.list {
+  width: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.041);
+}
+
+/************* FOOTER *************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #ffe4ff;
+  text-align: center;
+}
+
+/************* SLIDER *************/
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.6rem;
+  margin-top: -22px;
+  color: #dd95ff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #dd95ff;
+  font-size: 2.2rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #dd95ff;
+  font-size: 1.8rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-align {
+  grid-row: 2;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.active,
+.dot:hover {
+  background-color: #dd95ff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
